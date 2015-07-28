@@ -11,6 +11,9 @@ import java.io.IOException;
  * @author Julio
  *
  */
+
+
+
 public class nCalculadora implements Calculadora{
 	
 	private String linea;
@@ -19,6 +22,12 @@ public class nCalculadora implements Calculadora{
 	public void readFile(String file) throws FileNotFoundException {
 		// TODO Auto-generated method stub
 		// tiene que tener el valor: file = "datos.txt"
+		
+		/**
+		 * private String archivo = "datos.txt";
+		 * nCalculadora calc = new nCalculadora();
+		 * calc.readFile(archivo);
+		 */
 		FileReader fr = new FileReader(file);
 		BufferedReader bf = new BufferedReader(fr);
 		
@@ -28,7 +37,7 @@ public class nCalculadora implements Calculadora{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		System.out.println(linea);
 		
 	}
 	
