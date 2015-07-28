@@ -18,7 +18,8 @@ public class nCalculadora implements Calculadora{
 	@Override
 	public void readFile(String file) throws FileNotFoundException {
 		// TODO Auto-generated method stub
-		FileReader fr = new FileReader("datos.txt");
+		// tiene que tener el valor: file = "datos.txt"
+		FileReader fr = new FileReader(file);
 		BufferedReader bf = new BufferedReader(fr);
 		
 		try {
