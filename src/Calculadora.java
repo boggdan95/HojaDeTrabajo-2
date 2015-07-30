@@ -15,6 +15,9 @@ public class Calculadora implements ADTCalculadora{
     private Stack<Double> numeros= new Stack<Double>();
    
     
+    /* (non-Javadoc)
+     * @see ADTCalculadora#readFile(java.lang.String)
+     */
     public void readFile(String file) throws FileNotFoundException {
         // TODO Auto-generated method stub
         // tiene que tener el valor: file = "datos.txt"
@@ -32,6 +35,9 @@ public class Calculadora implements ADTCalculadora{
 	
     }
     
+    /* (non-Javadoc)
+     * @see ADTCalculadora#calcular()
+     */
     public double calcular(){
 	char[] cadenaChar = datosPosfix.toCharArray();
 
