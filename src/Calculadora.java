@@ -8,10 +8,10 @@ import java.io.IOException;
  *
  * @author Admin
  */
-public class Calculadora implements ADTCalculadora{
+public class Calculadora<P> implements ADTCalculadora{
     
     private String datosPosfix; 
-    private Double Resultado;
+    private double Resultado;
     private Stack<Double> numeros= new Stack<Double>();
    
     
@@ -61,9 +61,10 @@ public class Calculadora implements ADTCalculadora{
 		}else {
                     numeros.push(Double.parseDouble(""+cadenaChar[i]));
                             }
-	}          
+	}    
+
         Resultado = numeros.pop();
-        
+
         return Resultado;
         
     }

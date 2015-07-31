@@ -10,6 +10,10 @@ public class PruebaUnitaria {
 	int resultado = tester.size();
 	assertTrue(resultado == 0);
 	
+	
+	assertTrue(tester.pop() == null);
+	
+	assertTrue(tester.isEmpty()== true);
 	}
 
 }
